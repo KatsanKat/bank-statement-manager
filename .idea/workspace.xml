@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48ba8b10-5403-4935-945c-bbe330897bda" name="Default Changelist" comment="" />
+    <list default="true" id="48ba8b10-5403-4935-945c-bbe330897bda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BankStatementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BankStatementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +145,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -159,11 +164,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.BankStatementControllerTest">
+    <configuration name="BankStatementControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\BankStatementControllerTest" file="$PROJECT_DIR$/tests/Unit/BankStatementControllerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BankStatementControllerTest.testJsonDataReturnObject" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\BankStatementControllerTest" file="$PROJECT_DIR$/tests/Unit/BankStatementControllerTest.php" method="testJsonDataReturnObject" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.BankStatementControllerTest" />
+        <item itemvalue="PHPUnit.BankStatementControllerTest.testJsonDataReturnObject" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -176,7 +195,10 @@
       <option name="presentableId" value="Default" />
       <updated>1574164643185</updated>
       <workItem from="1574164644423" duration="5949000" />
-      <workItem from="1574257809904" duration="61773000" />
+      <workItem from="1574257809904" duration="62327000" />
+      <workItem from="1574873141918" duration="694000" />
+      <workItem from="1574874157629" duration="575000" />
+      <workItem from="1574882310536" duration="7125000" />
     </task>
     <servers />
   </component>
@@ -188,7 +210,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -14,7 +14,7 @@ class BankStatementController extends Controller
      *
      * @return object
      */
-    private function getJsonData()
+    public function getJsonData()
     {
         $client = new Client();
         $request = $client->get('https://agrcf.lib.id/exercice@dev/');
@@ -28,7 +28,7 @@ class BankStatementController extends Controller
      *
      * @return object
      */
-    private function transformToEloquent()
+    public function transformToEloquent()
     {
         $operations = collect(json_decode($this->getJsonData()));
         $operations->pull('statut');
@@ -60,7 +60,7 @@ class BankStatementController extends Controller
      * @param $item
      * @return object
      */
-    private function formatDatetimeToBeSort($item)
+    public function formatDatetimeToBeSort($item)
     {
         $item->Date = DateTime::createFromFormat('d/m/Y', $item->Date)->format('Y-m-d');
         return $item;
@@ -72,7 +72,7 @@ class BankStatementController extends Controller
      * @param $item
      * @return object
      */
-    private function computeSpentsAndRecipes ($item)
+    public function computeSpentsAndRecipes ($item)
     {
         $amount = str_replace(',', '.', $item->Montant);
         $item->Montant = number_format((float)$amount, 2, '.', '');
@@ -84,9 +84,9 @@ class BankStatementController extends Controller
     /**
      * filter eloquent object from request data
      *
-     * @param $startDate
-     * @param $endDate
-     * @param $ribId
+     * @param $startDate string
+     * @param $endDate string
+     * @param $ribId string
      * @return object
      */
     private function filterRangeStatementsAndStatementId($startDate, $endDate, $ribId)
@@ -95,7 +95,7 @@ class BankStatementController extends Controller
         $operations = $operations->where('Date', '>=', $startDate);
         $operations = $operations->where('Date', '<=', $endDate);
         if ($ribId !== null) {
-            $operations = $operations->where('RIB', '===', (string)$ribId);
+            $operations = $operations->where('RIB', '===', $ribId);
         }
         return $operations;
     }
